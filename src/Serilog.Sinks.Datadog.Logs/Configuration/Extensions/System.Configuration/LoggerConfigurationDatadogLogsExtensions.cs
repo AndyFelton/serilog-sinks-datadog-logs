@@ -33,10 +33,15 @@ namespace Serilog
             string source = null,
             string service = null,
             string host = null,
-            string[] tags = null,
+            string tags = null,
             DatadogConfiguration configuration = null,
             LogEventLevel logLevel = LevelAlias.Minimum)
         {
+            string[] arrTags = null;
+
+            if (tags != null)
+                arrTags = tags.Split(',');
+
             if (loggerConfiguration == null)
             {
                 throw new ArgumentNullException(nameof(loggerConfiguration));
@@ -47,7 +52,7 @@ namespace Serilog
             }
 
             configuration = (configuration != null) ? configuration : new DatadogConfiguration();
-            return loggerConfiguration.Sink(new DatadogSink(apiKey, source, service, host, tags, configuration), logLevel);
+            return loggerConfiguration.Sink(new DatadogSink(apiKey, source, service, host, arrTags, configuration), logLevel);
         }
     }
 }
