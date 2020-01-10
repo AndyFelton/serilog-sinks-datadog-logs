@@ -46,6 +46,10 @@ namespace Serilog
             if (tags != null)
                 arrTags = tags.Split(',');
 
+            if (host == null)
+            {
+                host = Environment.MachineName;
+            }
             if (loggerConfiguration == null)
             {
                 throw new ArgumentNullException(nameof(loggerConfiguration));
