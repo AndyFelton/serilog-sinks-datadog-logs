@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Serilog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
-      <HintPath>..\packages\Serilog.2.9.1-dev-01151\lib\net45\Serilog.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -54,6 +51,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\serilog-settings-appsettings\src\Serilog.Settings.AppSettings\Serilog.Settings.AppSettings.csproj">
+      <Project>{8f8ec349-a030-4497-9457-3e20d0fea9d2}</Project>
+      <Name>Serilog.Settings.AppSettings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\serilog\src\Serilog\Serilog.csproj">
+      <Project>{d2d79133-f80b-490a-9526-bbee54b9706d}</Project>
+      <Name>Serilog</Name>
+    </ProjectReference>
     <ProjectReference Include="..\src\Serilog.Sinks.Datadog.Logs\Serilog.Sinks.Datadog.Logs.csproj">
       <Project>{897105f7-58a7-4849-98a8-eb8edd450e47}</Project>
       <Name>Serilog.Sinks.Datadog.Logs</Name>
