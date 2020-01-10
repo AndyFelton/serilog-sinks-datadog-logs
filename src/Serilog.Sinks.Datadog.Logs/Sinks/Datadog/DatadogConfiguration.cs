@@ -13,12 +13,12 @@ namespace Serilog.Sinks.Datadog.Logs
         /// <summary>
         /// The Datadog logs-backend URL.
         /// </summary>
-        public const string DDUrl = "https://http-intake.logs.datadoghq.com";
+        public const string DDUrl = "https://http-intake.logs.datadoghq.eu";
 
         /// <summary>
         /// The Datadog logs-backend TCP SSL port.
         /// </summary>
-        public const int DDPort = 10516;
+        public const int DDPort = 443;
 
         /// <summary>
         /// The Datadog logs-backend TCP unsecure port.
