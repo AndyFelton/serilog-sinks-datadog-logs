@@ -8,6 +8,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.Sinks.Datadog.Logs"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{114F3284-BB52-4EF5-B64F-57524901EC6F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.Settings.AppSettings", "..\serilog-settings-appsettings\src\Serilog.Settings.AppSettings\Serilog.Settings.AppSettings.csproj", "{8F8EC349-A030-4497-9457-3E20D0FEA9D2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog", "..\serilog\src\Serilog\Serilog.csproj", "{D2D79133-F80B-490A-9526-BBEE54B9706D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,13 +46,36 @@ Global
 		{114F3284-BB52-4EF5-B64F-57524901EC6F}.Release|x64.Build.0 = Release|Any CPU
 		{114F3284-BB52-4EF5-B64F-57524901EC6F}.Release|x86.ActiveCfg = Release|Any CPU
 		{114F3284-BB52-4EF5-B64F-57524901EC6F}.Release|x86.Build.0 = Release|Any CPU
+		{8F8EC349-A030-4497-9457-3E20D0FEA9D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F8EC349-A030-4497-9457-3E20D0FEA9D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F8EC349-A030-4497-9457-3E20D0FEA9D2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8F8EC349-A030-4497-9457-3E20D0FEA9D2}.Debug|x64.Build.0 = Debug|Any CPU
+		{8F8EC349-A030-4497-9457-3E20D0FEA9D2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8F8EC349-A030-4497-9457-3E20D0FEA9D2}.Debug|x86.Build.0 = Debug|Any CPU
+		{8F8EC349-A030-4497-9457-3E20D0FEA9D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F8EC349-A030-4497-9457-3E20D0FEA9D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F8EC349-A030-4497-9457-3E20D0FEA9D2}.Release|x64.ActiveCfg = Release|Any CPU
+		{8F8EC349-A030-4497-9457-3E20D0FEA9D2}.Release|x64.Build.0 = Release|Any CPU
+		{8F8EC349-A030-4497-9457-3E20D0FEA9D2}.Release|x86.ActiveCfg = Release|Any CPU
+		{8F8EC349-A030-4497-9457-3E20D0FEA9D2}.Release|x86.Build.0 = Release|Any CPU
+		{D2D79133-F80B-490A-9526-BBEE54B9706D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D79133-F80B-490A-9526-BBEE54B9706D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D79133-F80B-490A-9526-BBEE54B9706D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D2D79133-F80B-490A-9526-BBEE54B9706D}.Debug|x64.Build.0 = Debug|Any CPU
+		{D2D79133-F80B-490A-9526-BBEE54B9706D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D2D79133-F80B-490A-9526-BBEE54B9706D}.Debug|x86.Build.0 = Debug|Any CPU
+		{D2D79133-F80B-490A-9526-BBEE54B9706D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D79133-F80B-490A-9526-BBEE54B9706D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2D79133-F80B-490A-9526-BBEE54B9706D}.Release|x64.ActiveCfg = Release|Any CPU
+		{D2D79133-F80B-490A-9526-BBEE54B9706D}.Release|x64.Build.0 = Release|Any CPU
+		{D2D79133-F80B-490A-9526-BBEE54B9706D}.Release|x86.ActiveCfg = Release|Any CPU
+		{D2D79133-F80B-490A-9526-BBEE54B9706D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{897105F7-58A7-4849-98A8-EB8EDD450E47} = {D0A5A0BA-56F9-4C56-8785-8C9F23A3B411}
-		{114F3284-BB52-4EF5-B64F-57524901EC6F} = {D0A5A0BA-56F9-4C56-8785-8C9F23A3B411}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0C195A4E-10CE-4593-84BF-28E72CA9E8DF}
